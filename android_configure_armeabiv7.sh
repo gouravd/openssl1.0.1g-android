@@ -2,13 +2,13 @@
 export DEV_PREFIX=$HOME
 
 # Don't forget to adjust this to your NDK path
-export ANDROID_NDK=${DEV_PREFIX}/android-ndk-r9c/
+export ANDROID_NDK=${DEV_PREFIX}/android-ndk-r10e/
 
 export NDK=${ANDROID_NDK}
 
-export TOOLCHAIN_INSTALL_DIR=`pwd`/../android/android-toolchain-armv7
+export TOOLCHAIN_INSTALL_DIR=`pwd`/android/android-toolchain-armv7
 
-$NDK/build/tools/make-standalone-toolchain.sh --platform=android-9 --toolchain=arm-linux-androideabi-4.8 --install-dir=$TOOLCHAIN_INSTALL_DIR
+$NDK/build/tools/make-standalone-toolchain.sh --platform=android-16 --toolchain=arm-linux-androideabi-4.9 --install-dir=$TOOLCHAIN_INSTALL_DIR
 export TOOLCHAIN_PATH=$TOOLCHAIN_INSTALL_DIR/bin
 export TOOL=arm-linux-androideabi
 export NDK_TOOLCHAIN_BASENAME=${TOOLCHAIN_PATH}/${TOOL}
