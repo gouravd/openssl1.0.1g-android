@@ -10,7 +10,7 @@ Compiling OpenSSL for `armeabi`
 
 ```
 1) Edit the `android_configure_armeabi.sh` with proper NDK location.
-2) Execute the above script file as `source ./android_configure_armeabi.sh` or `. ./android_cofigure_armeabi.sh`.
+2) Execute the above script file as `source ./android_configure_armeabi.sh`.
 3) Configure by exeucting the command `./Configure android shared --prefix=`pwd`/../libs/armeabi --openssldir=openssl`
    Note: DON’T give RELATIVE address in the Configure. Give ONLY absolute address
 	 Better to have the libs inside openssl folder itself.
@@ -25,7 +25,7 @@ Compiling OpenSSL for `armeabi-v7`
 
 ```
 1) Edit the `android_configure_armeabiv7.sh` with proper NDK location.
-2) Execute the above script file as `source ./android_configure_armeabiv7.sh` or `. ./android_cofigure_armeabiv7.sh`.
+2) Execute the above script file as `source ./android_configure_armeabiv7.sh`.
 3) Configure by executing the command `./Configure android-armv7 shared --prefix=`pwd`/../libs/armeabi-v7a --openssldir=openssl`
    Note: DON’T give RELATIVE address in the Configure. Give ONLY absolute address. (Highlighted in RED above)
 	 Better to have the libs inside openssl folder itself.
@@ -41,7 +41,7 @@ Compiling OpenSSL for `x86`
  
 ```
 1) Edit the `android_configure_x86.sh` with proper NDK location.
-2) Execute the above script file as `source ./android_configure_x86.sh` or `. ./android_cofigure_x86.sh`
+2) Execute the above script file as `source ./android_configure_x86.sh`
 3) Configure by executing the command `./Configure android-x86 shared --prefix=`pwd`/../libs/x86  --openssldir=openssl`.
    NOTE: DON’T give RELATIVE address in the Configure. Give ONLY absolute address. (Highlighted in RED above)
 	 Better to have the libs inside openssl folder itself.
